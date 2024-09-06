@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var usuario_1 = prompt("Digite um numero")
+        var usuario_2 = prompt("Digite um numero")
+        var usuario_3 = prompt("Digite um numero")
+        var usuario_4 = prompt("Digite um numero")
+
+        var resultado
+        debugger
+
+            if(usuario_1 > 0 && usuario_1 < 10  && usuario_2 > 0 && usuario_2 < 10 && usuario_3 > 0  && usuario_3 < 10 && usuario_4 > 0 && usuario_4 < 10)  {
+                resultado = (parseInt(usuario_1) + parseInt(usuario_2) + parseInt(usuario_3) + parseInt(usuario_4)) / 4
+
+                if (resultado < 5 ){
+                    alert("Tente novemente")
+                    
+                } else{
+                    alert("Voce passou no teste " + resultado)
+                }
+            }
+                
+            
+    </script>
+</body>
+</html>

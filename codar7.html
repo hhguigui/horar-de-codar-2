@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var numero1 = prompt("Digite um numero")
+        var numero2 = prompt("Digite um numero")
+        var numero3 = prompt("Digite um numero")
+        var numero4 = prompt("Digite um numero")
+        var numero5 = prompt("Digite um numero")
+        var numero6 = prompt("Digite um numero")
+
+        var resultado 
+
+        if(numero1 <= 72 && numero2 <= 72 && numero3 <= 72 && numero4 <= 72 && numero5 <= 72 && numero6 <= 72) {
+            resultado = parseInt(numero1) + parseInt(numero2) + parseInt(numero3) + parseInt(numero4) + parseInt(numero5) + parseInt(numero6)
+            alert(resultado)
+        } else if (numero1 > 72){
+            resultado = parseInt(numero2) + parseInt(numero3) + parseInt(numero4) + parseInt(numero5) + parseInt(numero6)
+            alert(resultado)
+        } else if (numero2 > 72){
+            resultado = parseInt(numero1) + parseInt(numero3) + parseInt(numero4) + parseInt(numero5) + parseInt(numero6)
+            alert(resultado)
+        } else if (numero3 > 72){
+            resultado = parseInt(numero1) + parseInt(numero2) + parseInt(numero4) + parseInt(numero5) + parseInt(numero6)
+            alert(resultado)
+        } else if (numero4 > 72) {
+            resultado = parseInt(numero1) + parseInt(numero2) + parseInt(numero3) + parseInt(numero5) + parseInt(numero6)
+            alert(resultado)
+        } else if (numero5 > 72) { 
+            resultado = parseInt(numero1) + parseInt(numero2) + parseInt(numero3) + parseInt(numero4) + parseInt(numero6)
+            alert(resultado)
+        } else{
+            resultado = parseInt(numero1) + parseInt(numero2) + parseInt(numero3) + parseInt(numero4) + parseInt(numero5)
+            alert(resultado)
+        }
+        alert("Todos os 6 numeros: " +  numero1 + ", " +  numero2 + ", " + numero3 + ", " +  numero4 + ", " + numero5 + ", " +  numero6)
+
+    </script>
+</body>
+</html>

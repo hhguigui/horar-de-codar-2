@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var altura = prompt("Sua altura")
+        var genero = prompt("Seu genero")
+        var peso
+        debugger
+
+        if(parseInt(genero) === 1) {
+            peso = (62.1 * parseFloat(altura))-44.7
+            alert("Peso ideal é " + peso.toFixed(2))
+        }else {
+            peso = (72.7 * parseFloat(altura))-58
+            alert("Peso ideal é " + peso.toFixed(2))
+
+        }
+    </script>
+</body>
+</html>

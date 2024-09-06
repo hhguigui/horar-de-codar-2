@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    var numero1 = prompt("Digite um numero")
+    var numero2 = prompt("Digite um numero")
+    var numero3 = prompt("Digite um numero")
+    var numero4 = prompt("Digite um numero")
+
+
+    debugger
+
+    if (numero1 === numero2 && numero1 === numero3 && numero1 === numero4 && numero2 === numero3 && numero2 === numero4 && numero3 === numero4 ) { // Aqui está sendo feito a verificação de que não serão iguais 
+        alert("tente novamente")
+    } else {
+        alert("O primeiro numero é " + numero1 + " e o ultimo é " + numero4)
+
+        if(numero1 > numero2 && numero1 > numero3 && numero1 > numero4){ // este if verifica se o n1 é o maior
+            alert("O maior numero é" + numero1)
+        }else if (numero2 > numero1 && numero2 > numero3 && numero2 > numero4) {
+            alert("O maior numero é " + numero2)
+        } else if (numero3 > numero1 && numero3 > numero2 && numero3 > numero4){
+            alert("O maior numero é" + numero3)
+        } else {
+            alert("O maior numero é" + numero4)
+        }
+    }
+   </script> 
+</body>
+</html>

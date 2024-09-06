@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <script>
+        var numero1 = prompt("digite um numero")
+        var numero2 = prompt("digite um numero")
+        var numero3 = prompt("digite um numero")
+        var resultado 
+
+        if (numero1 === numero2 && numero1 === numero3 && numero2 === numero3) { // aqui verifica se os valores são iguais 
+            alert("tente novamente")
+        } else if (numero1 > numero2 && numero1 > numero3) { // verifica se o n1 é o maior de todos
+            if(numero2 > numero3 ){
+                resultado= parseInt(numero1) + parseInt(numero2) 
+                alert("a conta é " + resultado )
+            }else {
+                resultado= parseInt(numero1) + parseInt(numero3)  
+                alert(" a conta é" + resultado)
+            }
+        } else if (numero2 > numero1 && numero2 > numero3) { // verifica se o n2 é o maior de todos
+            if(numero1 > numero3){
+                resultado = parseInt(numero2) + parseInt(numero1)
+                alert("a conta é" + resultado)
+            } else {
+                resultado = parseInt(numero2) + parseInt(numero3)
+                alert("a soma é" + resultado)
+            }
+        } 
+        else { // verifica se o n3 é o maior de todos 
+           if(numero2 > numero1){ // verifica se o n2 é maior que o n1, se for maior soma n2 + n3 
+               resultado = parseInt(numero3) + parseInt(numero2)
+               alert("a conta é" + resultado)
+           }else {
+             resultado = parseInt(numero3) + parseInt(numero1) // verifica se o n1 é maior que o n2, se for maior soma n1 + n3 
+           }
+
+        }
+        
+     </script>
+</body>
+</html>
